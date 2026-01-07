@@ -13,8 +13,8 @@ Educational Jupyter notebook repository for the EuBIC (European Bioinformatics C
 pip install -r requirements.txt
 
 # Or with conda
-conda create -n eubic2025 python=3.10
-conda activate eubic2025
+conda create -n eubic2026 python=3.10
+conda activate eubic2026
 pip install -r requirements.txt
 
 # Start JupyterLab

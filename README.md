@@ -12,8 +12,8 @@ This repository contains Jupyter notebooks for the EuBIC 2026 Winter School.
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/timosachsenberg/EuBIC2025.git
-cd EuBIC2025
+git clone https://github.com/timosachsenberg/EuBIC2026.git
+cd EuBIC2026
 ```
 
 2. Install dependencies:
@@ -23,8 +23,8 @@ pip install -r requirements.txt
 
 Or using conda:
 ```bash
-conda create -n eubic2025 python=3.10
-conda activate eubic2025
+conda create -n eubic2026 python=3.10
+conda activate eubic2026
 pip install -r requirements.txt
 ```
 
