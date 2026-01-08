@@ -1,6 +1,19 @@
 # EuBIC2026 Winter School
 
-This repository contains Jupyter notebooks for the EuBIC 2026 Winter School.
+Educational Jupyter notebooks for the EuBIC 2026 Winter School, teaching proteomics data analysis workflows using PyOpenMS.
+
+## Notebooks
+
+| Notebook | Topic | Description |
+|----------|-------|-------------|
+| **Task 0** | Prerequisites | Python, NumPy, pandas, and mass spectrometry fundamentals (optional) |
+| **Task 1** | Peaks | Protein digestion, MS1 visualization, isotope patterns, TIC |
+| **Task 2** | Identification | Peptide database search, fragment spectra, scoring, mirror plots |
+| **Task 3** | Quantification | Feature detection with Biosaur2, ID mapping, visualization |
+
+**New to Python or mass spectrometry?** Start with Task 0 to learn the fundamentals.
+
+**Quick Start:** Click the "Open in Colab" badge at the top of any notebook to run it directly in Google Colab without local installation.
 
 ## Setup
 
@@ -42,13 +55,22 @@ jupyter notebook
 
 ## Repository Structure
 
-- `notebooks/` - Workshop notebooks and tutorials
-- `data/` - Sample data files (if any)
-- `requirements.txt` - Python dependencies
+```
+EuBIC2026/
+├── notebooks/
+│   ├── EUBIC_Task0_Prerequisites.ipynb  # Python & MS fundamentals
+│   ├── EUBIC_Task1_Peaks.ipynb          # Digestion & MS1 data
+│   ├── EUBIC_Task2_ID.ipynb             # Peptide identification
+│   └── EUBIC_Task3_Quant.ipynb          # Quantification
+├── data/                                 # Sample data files
+└── requirements.txt                      # Python dependencies
+```
 
 ## Usage
 
-Navigate to the `notebooks/` directory to access the workshop materials.
+1. Navigate to the `notebooks/` directory
+2. Open notebooks in order (Task 0 → Task 1 → Task 2 → Task 3)
+3. Each notebook includes collapsible sections for beginners and advanced users
 
 ## License
 
