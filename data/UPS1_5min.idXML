@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://www.openms.de/xml-stylesheet/IdXML.xsl" ?>
+<IdXML version="1.5" xsi:noNamespaceSchemaLocation="https://www.openms.de/xml-schema/IdXML_1_5.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<SearchParameters id="SP_0" db="data/two_ups_proteins.fasta" db_version="" taxonomy="" mass_type="monoisotopic" charges="2:5" enzyme="trypsin" missed_cleavages="1" precursor_peak_tolerance="10" precursor_peak_tolerance_ppm="true" peak_mass_tolerance="20" peak_mass_tolerance_ppm="true" >
+		<FixedModification name="Carbamidomethyl (C)" />
+		<VariableModification name="Oxidation (M)" />
+				<UserParam type="string" name="extra_features" value="score,isotope_error,fragment_mz_error_median_ppm,matched_prefix_ions_fraction,matched_suffix_ions_fraction"/>
+				<UserParam type="string" name="PeptideIndexer:decoy_string" value="DECOY_"/>
+				<UserParam type="string" name="PeptideIndexer:decoy_string_position" value="prefix"/>
+				<UserParam type="string" name="PeptideIndexer:enzyme" value="Trypsin"/>
+				<UserParam type="string" name="PeptideIndexer:enzyme_specificity" value="full"/>
+				<UserParam type="int" name="PeptideIndexer:aaa_max" value="3"/>
+				<UserParam type="int" name="PeptideIndexer:mismatches_max" value="0"/>
+				<UserParam type="string" name="PeptideIndexer:IL_equivalent" value="false"/>
+				<UserParam type="string" name="PeptideIndexer:allow_nterm_protein_cleavage" value="true"/>
+				<UserParam type="string" name="PeptideIndexer:unmatched_action" value="error"/>
+				<UserParam type="string" name="PeptideIndexer:missing_decoy_action" value="silent"/>
+				<UserParam name="EnzymeTermSpecificity" type="string" value="full" />
+	</SearchParameters>
+	<IdentificationRun date="2026-01-08T14:28:20" search_engine="SimpleSearchEngine" search_engine_version="3.5.0-pre-FID-test-2025-09-19" search_parameters_ref="SP_0" >
+		<ProteinIdentification score_type="" higher_score_better="true" significance_threshold="0.0" >
+			<ProteinHit id="PH_0" accession="sp|P01031|CO5_HUMAN" score="0.0" sequence="" >
+				<UserParam type="string" name="target_decoy" value="target"/>
+			</ProteinHit>
+			<ProteinHit id="PH_1" accession="sp|P01133|EGF_HUMAN" score="0.0" sequence="" >
+				<UserParam type="string" name="target_decoy" value="target"/>
+			</ProteinHit>
+			<UserParam type="stringList" name="spectra_data" value="[data/UPS1_5min.mzML]"/>
+		</ProteinIdentification>
+		<PeptideIdentification score_type="" higher_score_better="true" significance_threshold="0.0" MZ="556.966918945312955" RT="2417.488800000000083" >
+			<PeptideHit score="6.834507238609312e-03" sequence="GEQIQLKGTVYNYR" charge="3" aa_before="R" aa_after="T" start="835" end="848" protein_refs="PH_0" >
+				<UserParam type="int" name="isotope_error" value="0"/>
+				<UserParam type="float" name="fragment_mz_error_median_ppm" value="105.19669198558438"/>
+				<UserParam type="float" name="precursor_mz_error_ppm" value="9.455889382660279"/>
+				<UserParam type="float" name="matched_prefix_ions_fraction" value="0.0"/>
+				<UserParam type="float" name="matched_suffix_ions_fraction" value="0.071428571428571"/>
+				<UserParam type="string" name="target_decoy" value="target"/>
+				<UserParam type="string" name="protein_references" value="unique"/>
+			</PeptideHit>
+		</PeptideIdentification>
+		<PeptideIdentification score_type="" higher_score_better="true" significance_threshold="0.0" MZ="614.849243164062955" RT="2421.274899999999889" >
+			<PeptideHit score="0.071497445795582" sequence="NQVTPLDILSK" charge="2" aa_before="K" aa_after="T" start="797" end="807" protein_refs="PH_1" >
+				<UserParam type="int" name="isotope_error" value="1"/>
+				<UserParam type="float" name="fragment_mz_error_median_ppm" value="69.191171546987079"/>
+				<UserParam type="float" name="precursor_mz_error_ppm" value="-8.465904729007089"/>
+				<UserParam type="float" name="matched_prefix_ions_fraction" value="0.090909090909091"/>
+				<UserParam type="float" name="matched_suffix_ions_fraction" value="0.090909090909091"/>
+				<UserParam type="string" name="target_decoy" value="target"/>
+				<UserParam type="string" name="protein_references" value="unique"/>
+			</PeptideHit>
+		</PeptideIdentification>
+		<PeptideIdentification score_type="" higher_score_better="true" significance_threshold="0.0" MZ="634.301025390625" RT="2433.45490000000018" >
+			<PeptideHit score="8.039656641728952e-03" sequence="RLGTAWC(Carbamidomethyl)SC(Carbamidomethyl)R" charge="2" aa_before="K" aa_after="E" start="758" end="767" protein_refs="PH_1" >
+				<UserParam type="int" name="isotope_error" value="1"/>
+				<UserParam type="float" name="fragment_mz_error_median_ppm" value="137.361836916305464"/>
+				<UserParam type="float" name="precursor_mz_error_ppm" value="3.527380436905625"/>
+				<UserParam type="float" name="matched_prefix_ions_fraction" value="0.0"/>
+				<UserParam type="float" name="matched_suffix_ions_fraction" value="0.1"/>
+				<UserParam type="string" name="target_decoy" value="target"/>
+				<UserParam type="string" name="protein_references" value="unique"/>
+			</PeptideHit>
+		</PeptideIdentification>
+		<PeptideIdentification score_type="" higher_score_better="true" significance_threshold="0.0" MZ="580.3291015625" RT="2435.766200000000026" >
+			<PeptideHit score="0.153163156498981" sequence="SLIGRSDLNGK" charge="2" aa_before="K" aa_after="R" start="576" end="586" protein_refs="PH_1" >
+				<UserParam type="int" name="isotope_error" value="0"/>
+				<UserParam type="float" name="fragment_mz_error_median_ppm" value="101.608068408764481"/>
+				<UserParam type="float" name="precursor_mz_error_ppm" value="6.856887416716473"/>
+				<UserParam type="float" name="matched_prefix_ions_fraction" value="0.090909090909091"/>
+				<UserParam type="float" name="matched_suffix_ions_fraction" value="0.0"/>
+				<UserParam type="string" name="target_decoy" value="target"/>
+				<UserParam type="string" name="protein_references" value="unique"/>
+			</PeptideHit>
+		</PeptideIdentification>
+		<PeptideIdentification score_type="" higher_score_better="true" significance_threshold="0.0" MZ="631.310791015625" RT="2448.464300000000094" >
+			<PeptideHit score="0.025317416037108" sequence="DM(Oxidation)QLGRLHM(Oxidation)K" charge="2" aa_before="K" aa_after="T" start="745" end="754" protein_refs="PH_0" >
+				<UserParam type="int" name="isotope_error" value="1"/>
+				<UserParam type="float" name="fragment_mz_error_median_ppm" value="102.513168250755697"/>
+				<UserParam type="float" name="precursor_mz_error_ppm" value="-9.285372982880594"/>
+				<UserParam type="float" name="matched_prefix_ions_fraction" value="0.1"/>
+				<UserParam type="float" name="matched_suffix_ions_fraction" value="0.0"/>
+				<UserParam type="string" name="target_decoy" value="target"/>
+				<UserParam type="string" name="protein_references" value="unique"/>
+			</PeptideHit>
+		</PeptideIdentification>
+		<PeptideIdentification score_type="" higher_score_better="true" significance_threshold="0.0" MZ="580.329772949218977" RT="2449.29280000000017" >
+			<PeptideHit score="0.018168131835332" sequence="SLIGRSDLNGK" charge="2" aa_before="K" aa_after="R" start="576" end="586" protein_refs="PH_1" >
+				<UserParam type="int" name="isotope_error" value="0"/>
+				<UserParam type="float" name="fragment_mz_error_median_ppm" value="137.930913798293432"/>
+				<UserParam type="float" name="precursor_mz_error_ppm" value="8.013802210051564"/>
+				<UserParam type="float" name="matched_prefix_ions_fraction" value="0.0"/>
+				<UserParam type="float" name="matched_suffix_ions_fraction" value="0.090909090909091"/>
+				<UserParam type="string" name="target_decoy" value="target"/>
+				<UserParam type="string" name="protein_references" value="unique"/>
+			</PeptideHit>
+		</PeptideIdentification>
+		<PeptideIdentification score_type="" higher_score_better="true" significance_threshold="0.0" MZ="834.944213867187955" RT="2454.631600000000162" >
+			<PeptideHit score="0.058862267934467" sequence="GEQIQLKGTVYNYR" charge="2" aa_before="R" aa_after="T" start="835" end="848" protein_refs="PH_0" >
+				<UserParam type="int" name="isotope_error" value="0"/>
+				<UserParam type="float" name="fragment_mz_error_median_ppm" value="114.825773121304536"/>
+				<UserParam type="float" name="precursor_mz_error_ppm" value="6.435841773369497"/>
+				<UserParam type="float" name="matched_prefix_ions_fraction" value="0.071428571428571"/>
+				<UserParam type="float" name="matched_suffix_ions_fraction" value="0.0"/>
+				<UserParam type="string" name="target_decoy" value="target"/>
+				<UserParam type="string" name="protein_references" value="unique"/>
+			</PeptideHit>
+		</PeptideIdentification>
+		<PeptideIdentification score_type="" higher_score_better="true" significance_threshold="0.0" MZ="834.945739746093977" RT="2463.637099999999919" >
+			<PeptideHit score="0.714671094782306" sequence="GEQIQLKGTVYNYR" charge="2" aa_before="R" aa_after="T" start="835" end="848" protein_refs="PH_0" >
+				<UserParam type="int" name="isotope_error" value="0"/>
+				<UserParam type="float" name="fragment_mz_error_median_ppm" value="41.431432210023189"/>
+				<UserParam type="float" name="precursor_mz_error_ppm" value="8.263375518732452"/>
+				<UserParam type="float" name="matched_prefix_ions_fraction" value="0.142857142857143"/>
+				<UserParam type="float" name="matched_suffix_ions_fraction" value="0.0"/>
+				<UserParam type="string" name="target_decoy" value="target"/>
+				<UserParam type="string" name="protein_references" value="unique"/>
+			</PeptideHit>
+		</PeptideIdentification>
+		<PeptideIdentification score_type="" higher_score_better="true" significance_threshold="0.0" MZ="460.558654785156023" RT="2463.765699999999924" >
+			<PeptideHit score="4.07073261475502e-04" sequence="ALDPPHQMELTQ" charge="3" aa_before="R" aa_after="]" start="1195" end="1206" protein_refs="PH_1" >
+				<UserParam type="int" name="isotope_error" value="0"/>
+				<UserParam type="float" name="fragment_mz_error_median_ppm" value="369.441036986420841"/>
+				<UserParam type="float" name="precursor_mz_error_ppm" value="-0.704052748306607"/>
+				<UserParam type="float" name="matched_prefix_ions_fraction" value="0.083333333333333"/>
+				<UserParam type="float" name="matched_suffix_ions_fraction" value="0.0"/>
+				<UserParam type="string" name="target_decoy" value="target"/>
+				<UserParam type="string" name="protein_references" value="unique"/>
+			</PeptideHit>
+		</PeptideIdentification>
+		<PeptideIdentification score_type="" higher_score_better="true" significance_threshold="0.0" MZ="758.404602050781023" RT="2475.910899999999856" >
+			<PeptideHit score="0.127097713177513" sequence="EALQIKYNFSFR" charge="2" aa_before="K" aa_after="Y" start="1622" end="1633" protein_refs="PH_0" >
+				<UserParam type="int" name="isotope_error" value="0"/>
+				<UserParam type="float" name="fragment_mz_error_median_ppm" value="281.345791215805264"/>
+				<UserParam type="float" name="precursor_mz_error_ppm" value="4.272662832360987"/>
+				<UserParam type="float" name="matched_prefix_ions_fraction" value="0.0"/>
+				<UserParam type="float" name="matched_suffix_ions_fraction" value="0.083333333333333"/>
+				<UserParam type="string" name="target_decoy" value="target"/>
+				<UserParam type="string" name="protein_references" value="unique"/>
+			</PeptideHit>
+		</PeptideIdentification>
+		<PeptideIdentification score_type="" higher_score_better="true" significance_threshold="0.0" MZ="738.397766113281023" RT="2479.827699999999823" >
+			<PeptideHit score="0.011170647380767" sequence="RLFWTDTGINPR" charge="2" aa_before="K" aa_after="I" start="610" end="621" protein_refs="PH_1" >
+				<UserParam type="int" name="isotope_error" value="0"/>
+				<UserParam type="float" name="fragment_mz_error_median_ppm" value="123.310816752328449"/>
+				<UserParam type="float" name="precursor_mz_error_ppm" value="8.718980525806131"/>
+				<UserParam type="float" name="matched_prefix_ions_fraction" value="0.083333333333333"/>
+				<UserParam type="float" name="matched_suffix_ions_fraction" value="0.0"/>
+				<UserParam type="string" name="target_decoy" value="target"/>
+				<UserParam type="string" name="protein_references" value="unique"/>
+			</PeptideHit>
+		</PeptideIdentification>
+		<PeptideIdentification score_type="" higher_score_better="true" significance_threshold="0.0" MZ="758.404418945312955" RT="2480.394400000000132" >
+			<PeptideHit score="0.11903653011207" sequence="EALQIKYNFSFR" charge="2" aa_before="K" aa_after="Y" start="1622" end="1633" protein_refs="PH_0" >
+				<UserParam type="int" name="isotope_error" value="0"/>
+				<UserParam type="float" name="fragment_mz_error_median_ppm" value="202.76884649229163"/>
+				<UserParam type="float" name="precursor_mz_error_ppm" value="4.031226730944046"/>
+				<UserParam type="float" name="matched_prefix_ions_fraction" value="0.0"/>
+				<UserParam type="float" name="matched_suffix_ions_fraction" value="0.083333333333333"/>
+				<UserParam type="string" name="target_decoy" value="target"/>
+				<UserParam type="string" name="protein_references" value="unique"/>
+			</PeptideHit>
+		</PeptideIdentification>
+		<PeptideIdentification score_type="" higher_score_better="true" significance_threshold="0.0" MZ="460.559539794921989" RT="2480.904500000000098" >
+			<PeptideHit score="0.011252860538007" sequence="ALDPPHQMELTQ" charge="3" aa_before="R" aa_after="]" start="1195" end="1206" protein_refs="PH_1" >
+				<UserParam type="int" name="isotope_error" value="0"/>
+				<UserParam type="float" name="fragment_mz_error_median_ppm" value="385.504970780397741"/>
+				<UserParam type="float" name="precursor_mz_error_ppm" value="1.217546452310623"/>
+				<UserParam type="float" name="matched_prefix_ions_fraction" value="0.083333333333333"/>
+				<UserParam type="float" name="matched_suffix_ions_fraction" value="0.0"/>
+				<UserParam type="string" name="target_decoy" value="target"/>
+				<UserParam type="string" name="protein_references" value="unique"/>
+			</PeptideHit>
+		</PeptideIdentification>
+		<PeptideIdentification score_type="" higher_score_better="true" significance_threshold="0.0" MZ="409.226013183593977" RT="2482.175200000000132" >
+			<PeptideHit score="0.016664671914121" sequence="GNPPIYR" charge="2" aa_before="K" aa_after="F" start="1219" end="1225" protein_refs="PH_0" >
+				<UserParam type="int" name="isotope_error" value="1"/>
+				<UserParam type="float" name="fragment_mz_error_median_ppm" value="59.8840210795655"/>
+				<UserParam type="float" name="precursor_mz_error_ppm" value="1.475512999258139"/>
+				<UserParam type="float" name="matched_prefix_ions_fraction" value="0.0"/>
+				<UserParam type="float" name="matched_suffix_ions_fraction" value="0.142857142857143"/>
+				<UserParam type="string" name="target_decoy" value="target"/>
+				<UserParam type="string" name="protein_references" value="unique"/>
+			</PeptideHit>
+		</PeptideIdentification>
+		<PeptideIdentification score_type="" higher_score_better="true" significance_threshold="0.0" MZ="612.29931640625" RT="2486.741500000000087" >
+			<PeptideHit score="0.041544114605317" sequence="ESYSGVTLDPR" charge="2" aa_before="R" aa_after="G" start="936" end="946" protein_refs="PH_0" >
+				<UserParam type="int" name="isotope_error" value="0"/>
+				<UserParam type="float" name="fragment_mz_error_median_ppm" value="90.728438881727868"/>
+				<UserParam type="float" name="precursor_mz_error_ppm" value="0.891119834095755"/>
+				<UserParam type="float" name="matched_prefix_ions_fraction" value="0.0"/>
+				<UserParam type="float" name="matched_suffix_ions_fraction" value="0.090909090909091"/>
+				<UserParam type="string" name="target_decoy" value="target"/>
+				<UserParam type="string" name="protein_references" value="unique"/>
+			</PeptideHit>
+		</PeptideIdentification>
+		<PeptideIdentification score_type="" higher_score_better="true" significance_threshold="0.0" MZ="880.946350097656023" RT="2492.058500000000095" >
+			<PeptideHit score="0.06398921920239" sequence="WWELRHAGHGQQQK" charge="2" aa_before="K" aa_after="V" start="1018" end="1031" protein_refs="PH_1" >
+				<UserParam type="int" name="isotope_error" value="0"/>
+				<UserParam type="float" name="fragment_mz_error_median_ppm" value="120.47218665322022"/>
+				<UserParam type="float" name="precursor_mz_error_ppm" value="7.163175982674808"/>
+				<UserParam type="float" name="matched_prefix_ions_fraction" value="0.0"/>
+				<UserParam type="float" name="matched_suffix_ions_fraction" value="0.071428571428571"/>
+				<UserParam type="string" name="target_decoy" value="target"/>
+				<UserParam type="string" name="protein_references" value="unique"/>
+			</PeptideHit>
+		</PeptideIdentification>
+		<PeptideIdentification score_type="" higher_score_better="true" significance_threshold="0.0" MZ="587.632385253906023" RT="2504.496399999999994" >
+			<PeptideHit score="0.012013117127628" sequence="WWELRHAGHGQQQK" charge="3" aa_before="K" aa_after="V" start="1018" end="1031" protein_refs="PH_1" >
+				<UserParam type="int" name="isotope_error" value="0"/>
+				<UserParam type="float" name="fragment_mz_error_median_ppm" value="198.411611274368681"/>
+				<UserParam type="float" name="precursor_mz_error_ppm" value="5.558923927804259"/>
+				<UserParam type="float" name="matched_prefix_ions_fraction" value="0.0"/>
+				<UserParam type="float" name="matched_suffix_ions_fraction" value="0.071428571428571"/>
+				<UserParam type="string" name="target_decoy" value="target"/>
+				<UserParam type="string" name="protein_references" value="unique"/>
+			</PeptideHit>
+		</PeptideIdentification>
+		<PeptideIdentification score_type="" higher_score_better="true" significance_threshold="0.0" MZ="573.810424804687955" RT="2510.826599999999871" >
+			<PeptideHit score="0.02295354084046" sequence="DLKWWELR" charge="2" aa_before="R" aa_after="H" start="1015" end="1022" protein_refs="PH_1" >
+				<UserParam type="int" name="isotope_error" value="1"/>
+				<UserParam type="float" name="fragment_mz_error_median_ppm" value="40.893875279488093"/>
+				<UserParam type="float" name="precursor_mz_error_ppm" value="-3.412945452983426"/>
+				<UserParam type="float" name="matched_prefix_ions_fraction" value="0.0"/>
+				<UserParam type="float" name="matched_suffix_ions_fraction" value="0.125"/>
+				<UserParam type="string" name="target_decoy" value="target"/>
+				<UserParam type="string" name="protein_references" value="unique"/>
+			</PeptideHit>
+		</PeptideIdentification>
+		<PeptideIdentification score_type="" higher_score_better="true" significance_threshold="0.0" MZ="470.783294677733977" RT="2513.975100000000111" >
+			<PeptideHit score="0.468717928110452" sequence="AARISLGPR" charge="2" aa_before="R" aa_after="C" start="714" end="722" protein_refs="PH_0" >
+				<UserParam type="int" name="isotope_error" value="0"/>
+				<UserParam type="float" name="fragment_mz_error_median_ppm" value="164.067464300313901"/>
+				<UserParam type="float" name="precursor_mz_error_ppm" value="-9.947053895766008"/>
+				<UserParam type="float" name="matched_prefix_ions_fraction" value="0.0"/>
+				<UserParam type="float" name="matched_suffix_ions_fraction" value="0.111111111111111"/>
+				<UserParam type="string" name="target_decoy" value="target"/>
+				<UserParam type="string" name="protein_references" value="unique"/>
+			</PeptideHit>
+		</PeptideIdentification>
+		<PeptideIdentification score_type="" higher_score_better="true" significance_threshold="0.0" MZ="547.288391113281023" RT="2518.3746000000001" >
+			<PeptideHit score="7.187875165911606e-03" sequence="IYWVDLER" charge="2" aa_before="R" aa_after="Q" start="87" end="94" protein_refs="PH_1" >
+				<UserParam type="int" name="isotope_error" value="0"/>
+				<UserParam type="float" name="fragment_mz_error_median_ppm" value="208.857808835555943"/>
+				<UserParam type="float" name="precursor_mz_error_ppm" value="1.670848226779827"/>
+				<UserParam type="float" name="matched_prefix_ions_fraction" value="0.0"/>
+				<UserParam type="float" name="matched_suffix_ions_fraction" value="0.125"/>
+				<UserParam type="string" name="target_decoy" value="target"/>
+				<UserParam type="string" name="protein_references" value="unique"/>
+			</PeptideHit>
+		</PeptideIdentification>
+		<PeptideIdentification score_type="" higher_score_better="true" significance_threshold="0.0" MZ="771.8827" RT="2526.561499999999796" >
+			<PeptideHit score="0.045177374009454" sequence="QTAC(Carbamidomethyl)KPEIAYAYK" charge="2" aa_before="K" aa_after="V" start="1549" end="1561" protein_refs="PH_0" >
+				<UserParam type="int" name="isotope_error" value="0"/>
+				<UserParam type="float" name="fragment_mz_error_median_ppm" value="53.860747913745612"/>
+				<UserParam type="float" name="precursor_mz_error_ppm" value="-2.574916244827593"/>
+				<UserParam type="float" name="matched_prefix_ions_fraction" value="0.076923076923077"/>
+				<UserParam type="float" name="matched_suffix_ions_fraction" value="0.0"/>
+				<UserParam type="string" name="target_decoy" value="target"/>
+				<UserParam type="string" name="protein_references" value="unique"/>
+			</PeptideHit>
+		</PeptideIdentification>
+		<PeptideIdentification score_type="" higher_score_better="true" significance_threshold="0.0" MZ="547.288208007812955" RT="2527.384900000000016" >
+			<PeptideHit score="0.010313042649846" sequence="IYWVDLER" charge="2" aa_before="R" aa_after="Q" start="87" end="94" protein_refs="PH_1" >
+				<UserParam type="int" name="isotope_error" value="0"/>
+				<UserParam type="float" name="fragment_mz_error_median_ppm" value="172.605416072173284"/>
+				<UserParam type="float" name="precursor_mz_error_ppm" value="1.33627914586646"/>
+				<UserParam type="float" name="matched_prefix_ions_fraction" value="0.125"/>
+				<UserParam type="float" name="matched_suffix_ions_fraction" value="0.0"/>
+				<UserParam type="string" name="target_decoy" value="target"/>
+				<UserParam type="string" name="protein_references" value="unique"/>
+			</PeptideHit>
+		</PeptideIdentification>
+		<PeptideIdentification score_type="" higher_score_better="true" significance_threshold="0.0" MZ="771.882873535156023" RT="2531.659400000000005" >
+			<PeptideHit score="0.02292670265047" sequence="QTAC(Carbamidomethyl)KPEIAYAYK" charge="2" aa_before="K" aa_after="V" start="1549" end="1561" protein_refs="PH_0" >
+				<UserParam type="int" name="isotope_error" value="0"/>
+				<UserParam type="float" name="fragment_mz_error_median_ppm" value="59.063509038880959"/>
+				<UserParam type="float" name="precursor_mz_error_ppm" value="-2.350096192267384"/>
+				<UserParam type="float" name="matched_prefix_ions_fraction" value="0.076923076923077"/>
+				<UserParam type="float" name="matched_suffix_ions_fraction" value="0.076923076923077"/>
+				<UserParam type="string" name="target_decoy" value="target"/>
+				<UserParam type="string" name="protein_references" value="unique"/>
+			</PeptideHit>
+		</PeptideIdentification>
+		<PeptideIdentification score_type="" higher_score_better="true" significance_threshold="0.0" MZ="665.846923828125" RT="2547.971900000000005" >
+			<PeptideHit score="9.659398468925142e-03" sequence="YPANVAVDPVER" charge="2" aa_before="K" aa_after="F" start="158" end="169" protein_refs="PH_1" >
+				<UserParam type="int" name="isotope_error" value="1"/>
+				<UserParam type="float" name="fragment_mz_error_median_ppm" value="151.749415564807634"/>
+				<UserParam type="float" name="precursor_mz_error_ppm" value="-0.340935813147564"/>
+				<UserParam type="float" name="matched_prefix_ions_fraction" value="0.0"/>
+				<UserParam type="float" name="matched_suffix_ions_fraction" value="0.083333333333333"/>
+				<UserParam type="string" name="target_decoy" value="target"/>
+				<UserParam type="string" name="protein_references" value="unique"/>
+			</PeptideHit>
+		</PeptideIdentification>
+		<PeptideIdentification score_type="" higher_score_better="true" significance_threshold="0.0" MZ="567.793701171875" RT="2549.30560000000014" >
+			<PeptideHit score="2.093959930602356e-03" sequence="VTC(Carbamidomethyl)TNAELVK" charge="2" aa_before="K" aa_after="G" start="1603" end="1612" protein_refs="PH_0" >
+				<UserParam type="int" name="isotope_error" value="0"/>
+				<UserParam type="float" name="fragment_mz_error_median_ppm" value="32.788156226993976"/>
+				<UserParam type="float" name="precursor_mz_error_ppm" value="-1.951380548296808"/>
+				<UserParam type="float" name="matched_prefix_ions_fraction" value="0.0"/>
+				<UserParam type="float" name="matched_suffix_ions_fraction" value="0.1"/>
+				<UserParam type="string" name="target_decoy" value="target"/>
+				<UserParam type="string" name="protein_references" value="unique"/>
+			</PeptideHit>
+		</PeptideIdentification>
+		<PeptideIdentification score_type="" higher_score_better="true" significance_threshold="0.0" MZ="834.946960449218977" RT="2550.109100000000126" >
+			<PeptideHit score="0.049588456153867" sequence="GEQIQLKGTVYNYR" charge="2" aa_before="R" aa_after="T" start="835" end="848" protein_refs="PH_0" >
+				<UserParam type="int" name="isotope_error" value="0"/>
+				<UserParam type="float" name="fragment_mz_error_median_ppm" value="61.342700439373047"/>
+				<UserParam type="float" name="precursor_mz_error_ppm" value="9.725402515240678"/>
+				<UserParam type="float" name="matched_prefix_ions_fraction" value="0.071428571428571"/>
+				<UserParam type="float" name="matched_suffix_ions_fraction" value="0.0"/>
+				<UserParam type="string" name="target_decoy" value="target"/>
+				<UserParam type="string" name="protein_references" value="unique"/>
+			</PeptideHit>
+		</PeptideIdentification>
+		<PeptideIdentification score_type="" higher_score_better="true" significance_threshold="0.0" MZ="556.966613769531023" RT="2559.154899999999998" >
+			<PeptideHit score="2.274050907894126e-03" sequence="GEQIQLKGTVYNYR" charge="3" aa_before="R" aa_after="T" start="835" end="848" protein_refs="PH_0" >
+				<UserParam type="int" name="isotope_error" value="0"/>
+				<UserParam type="float" name="fragment_mz_error_median_ppm" value="165.46207091110648"/>
+				<UserParam type="float" name="precursor_mz_error_ppm" value="8.907959770936749"/>
+				<UserParam type="float" name="matched_prefix_ions_fraction" value="0.071428571428571"/>
+				<UserParam type="float" name="matched_suffix_ions_fraction" value="0.0"/>
+				<UserParam type="string" name="target_decoy" value="target"/>
+				<UserParam type="string" name="protein_references" value="unique"/>
+			</PeptideHit>
+		</PeptideIdentification>
+		<PeptideIdentification score_type="" higher_score_better="true" significance_threshold="0.0" MZ="556.966918945312955" RT="2578.884900000000016" >
+			<PeptideHit score="6.320186028468282e-03" sequence="GEQIQLKGTVYNYR" charge="3" aa_before="R" aa_after="T" start="835" end="848" protein_refs="PH_0" >
+				<UserParam type="int" name="isotope_error" value="0"/>
+				<UserParam type="float" name="fragment_mz_error_median_ppm" value="132.866969177385528"/>
+				<UserParam type="float" name="precursor_mz_error_ppm" value="9.455889382660279"/>
+				<UserParam type="float" name="matched_prefix_ions_fraction" value="0.071428571428571"/>
+				<UserParam type="float" name="matched_suffix_ions_fraction" value="0.0"/>
+				<UserParam type="string" name="target_decoy" value="target"/>
+				<UserParam type="string" name="protein_references" value="unique"/>
+			</PeptideHit>
+		</PeptideIdentification>
+		<PeptideIdentification score_type="" higher_score_better="true" significance_threshold="0.0" MZ="556.966552734375" RT="2582.969700000000103" >
+			<PeptideHit score="0.01461137176496" sequence="GEQIQLKGTVYNYR" charge="3" aa_before="R" aa_after="T" start="835" end="848" protein_refs="PH_0" >
+				<UserParam type="int" name="isotope_error" value="0"/>
+				<UserParam type="float" name="fragment_mz_error_median_ppm" value="142.107422358006346"/>
+				<UserParam type="float" name="precursor_mz_error_ppm" value="8.798373849245227"/>
+				<UserParam type="float" name="matched_prefix_ions_fraction" value="0.0"/>
+				<UserParam type="float" name="matched_suffix_ions_fraction" value="0.071428571428571"/>
+				<UserParam type="string" name="target_decoy" value="target"/>
+				<UserParam type="string" name="protein_references" value="unique"/>
+			</PeptideHit>
+		</PeptideIdentification>
+		<PeptideIdentification score_type="" higher_score_better="true" significance_threshold="0.0" MZ="588.799499511718977" RT="2603.287800000000061" >
+			<PeptideHit score="4.105498159920752e-03" sequence="QERVC(Carbamidomethyl)NIEK" charge="2" aa_before="R" aa_after="N" start="107" end="115" protein_refs="PH_1" >
+				<UserParam type="int" name="isotope_error" value="1"/>
+				<UserParam type="float" name="fragment_mz_error_median_ppm" value="29.191973576095844"/>
+				<UserParam type="float" name="precursor_mz_error_ppm" value="0.601124193265945"/>
+				<UserParam type="float" name="matched_prefix_ions_fraction" value="0.111111111111111"/>
+				<UserParam type="float" name="matched_suffix_ions_fraction" value="0.0"/>
+				<UserParam type="string" name="target_decoy" value="target"/>
+				<UserParam type="string" name="protein_references" value="unique"/>
+			</PeptideHit>
+		</PeptideIdentification>
+		<PeptideIdentification score_type="" higher_score_better="true" significance_threshold="0.0" MZ="556.966369628906023" RT="2606.742099999999937" >
+			<PeptideHit score="9.84395116770483e-04" sequence="GEQIQLKGTVYNYR" charge="3" aa_before="R" aa_after="T" start="835" end="848" protein_refs="PH_0" >
+				<UserParam type="int" name="isotope_error" value="0"/>
+				<UserParam type="float" name="fragment_mz_error_median_ppm" value="155.89805672371449"/>
+				<UserParam type="float" name="precursor_mz_error_ppm" value="8.469616082537698"/>
+				<UserParam type="float" name="matched_prefix_ions_fraction" value="0.0"/>
+				<UserParam type="float" name="matched_suffix_ions_fraction" value="0.071428571428571"/>
+				<UserParam type="string" name="target_decoy" value="target"/>
+				<UserParam type="string" name="protein_references" value="unique"/>
+			</PeptideHit>
+		</PeptideIdentification>
+		<PeptideIdentification score_type="" higher_score_better="true" significance_threshold="0.0" MZ="556.966674804687955" RT="2610.153899999999794" >
+			<PeptideHit score="3.581929576281733e-03" sequence="GEQIQLKGTVYNYR" charge="3" aa_before="R" aa_after="T" start="835" end="848" protein_refs="PH_0" >
+				<UserParam type="int" name="isotope_error" value="0"/>
+				<UserParam type="float" name="fragment_mz_error_median_ppm" value="189.78075332687024"/>
+				<UserParam type="float" name="precursor_mz_error_ppm" value="9.01754569426123"/>
+				<UserParam type="float" name="matched_prefix_ions_fraction" value="0.071428571428571"/>
+				<UserParam type="float" name="matched_suffix_ions_fraction" value="0.0"/>
+				<UserParam type="string" name="target_decoy" value="target"/>
+				<UserParam type="string" name="protein_references" value="unique"/>
+			</PeptideHit>
+		</PeptideIdentification>
+		<PeptideIdentification score_type="" higher_score_better="true" significance_threshold="0.0" MZ="449.77294921875" RT="2649.691100000000006" >
+			<PeptideHit score="0.034389966578913" sequence="GAKKPLER" charge="2" aa_before="R" aa_after="V" start="614" end="621" protein_refs="PH_0" >
+				<UserParam type="int" name="isotope_error" value="0"/>
+				<UserParam type="float" name="fragment_mz_error_median_ppm" value="144.716326483843233"/>
+				<UserParam type="float" name="precursor_mz_error_ppm" value="-9.180949113540303"/>
+				<UserParam type="float" name="matched_prefix_ions_fraction" value="0.0"/>
+				<UserParam type="float" name="matched_suffix_ions_fraction" value="0.125"/>
+				<UserParam type="string" name="target_decoy" value="target"/>
+				<UserParam type="string" name="protein_references" value="unique"/>
+			</PeptideHit>
+		</PeptideIdentification>
+		<PeptideIdentification score_type="" higher_score_better="true" significance_threshold="0.0" MZ="455.588043212891023" RT="2662.492600000000039" >
+			<PeptideHit score="0.305098314813241" sequence="ITHYNYLILSK" charge="3" aa_before="K" aa_after="G" start="495" end="505" protein_refs="PH_0" >
+				<UserParam type="int" name="isotope_error" value="0"/>
+				<UserParam type="float" name="fragment_mz_error_median_ppm" value="389.179804516351282"/>
+				<UserParam type="float" name="precursor_mz_error_ppm" value="-5.628579264486687"/>
+				<UserParam type="float" name="matched_prefix_ions_fraction" value="0.0"/>
+				<UserParam type="float" name="matched_suffix_ions_fraction" value="0.090909090909091"/>
+				<UserParam type="string" name="target_decoy" value="target"/>
+				<UserParam type="string" name="protein_references" value="unique"/>
+			</PeptideHit>
+		</PeptideIdentification>
+		<PeptideIdentification score_type="" higher_score_better="true" significance_threshold="0.0" MZ="690.341613769531023" RT="2666.23660000000018" >
+			<PeptideHit score="8.637133827152301e-03" sequence="ALDPPHQMELTQ" charge="2" aa_before="R" aa_after="]" start="1195" end="1206" protein_refs="PH_1" >
+				<UserParam type="int" name="isotope_error" value="0"/>
+				<UserParam type="float" name="fragment_mz_error_median_ppm" value="175.754510833872359"/>
+				<UserParam type="float" name="precursor_mz_error_ppm" value="9.826301907429704"/>
+				<UserParam type="float" name="matched_prefix_ions_fraction" value="0.0"/>
+				<UserParam type="float" name="matched_suffix_ions_fraction" value="0.083333333333333"/>
+				<UserParam type="string" name="target_decoy" value="target"/>
+				<UserParam type="string" name="protein_references" value="unique"/>
+			</PeptideHit>
+		</PeptideIdentification>
+		<PeptideIdentification score_type="" higher_score_better="true" significance_threshold="0.0" MZ="903.943399999999997" RT="2668.797099999999773" >
+			<PeptideHit score="0.709508151423023" sequence="KFSYSSGHVHLSSENK" charge="2" aa_before="K" aa_after="F" start="62" end="77" protein_refs="PH_0" >
+				<UserParam type="int" name="isotope_error" value="0"/>
+				<UserParam type="float" name="fragment_mz_error_median_ppm" value="34.655848031395316"/>
+				<UserParam type="float" name="precursor_mz_error_ppm" value="1.42501954705217"/>
+				<UserParam type="float" name="matched_prefix_ions_fraction" value="0.125"/>
+				<UserParam type="float" name="matched_suffix_ions_fraction" value="0.0"/>
+				<UserParam type="string" name="target_decoy" value="target"/>
+				<UserParam type="string" name="protein_references" value="unique"/>
+			</PeptideHit>
+		</PeptideIdentification>
+		<PeptideIdentification score_type="" higher_score_better="true" significance_threshold="0.0" MZ="690.344177246093977" RT="2672.492299999999887" >
+			<PeptideHit score="0.765152455206725" sequence="RESYSGVTLDPR" charge="2" aa_before="K" aa_after="G" start="935" end="946" protein_refs="PH_0" >
+				<UserParam type="int" name="isotope_error" value="0"/>
+				<UserParam type="float" name="fragment_mz_error_median_ppm" value="39.920000279676501"/>
+				<UserParam type="float" name="precursor_mz_error_ppm" value="-7.458861448491868"/>
+				<UserParam type="float" name="matched_prefix_ions_fraction" value="0.166666666666667"/>
+				<UserParam type="float" name="matched_suffix_ions_fraction" value="0.083333333333333"/>
+				<UserParam type="string" name="target_decoy" value="target"/>
+				<UserParam type="string" name="protein_references" value="unique"/>
+			</PeptideHit>
+		</PeptideIdentification>
+		<PeptideIdentification score_type="" higher_score_better="true" significance_threshold="0.0" MZ="553.271423339843977" RT="2674.755400000000009" >
+			<PeptideHit score="0.016879531736754" sequence="DSSVPNTGTAR" charge="2" aa_before="K" aa_after="M" start="1235" end="1245" protein_refs="PH_0" >
+				<UserParam type="int" name="isotope_error" value="1"/>
+				<UserParam type="float" name="fragment_mz_error_median_ppm" value="145.9149327339953"/>
+				<UserParam type="float" name="precursor_mz_error_ppm" value="0.266794449322416"/>
+				<UserParam type="float" name="matched_prefix_ions_fraction" value="0.0"/>
+				<UserParam type="float" name="matched_suffix_ions_fraction" value="0.090909090909091"/>
+				<UserParam type="string" name="target_decoy" value="target"/>
+				<UserParam type="string" name="protein_references" value="unique"/>
+			</PeptideHit>
+		</PeptideIdentification>
+		<PeptideIdentification score_type="" higher_score_better="true" significance_threshold="0.0" MZ="364.545684814453011" RT="2676.021699999999782" >
+			<PeptideHit score="8.313404737705636e-03" sequence="NFEITIKAR" charge="3" aa_before="K" aa_after="Y" start="244" end="252" protein_refs="PH_0" >
+				<UserParam type="int" name="isotope_error" value="0"/>
+				<UserParam type="float" name="fragment_mz_error_median_ppm" value="190.177523589120682"/>
+				<UserParam type="float" name="precursor_mz_error_ppm" value="1.578613274162025"/>
+				<UserParam type="float" name="matched_prefix_ions_fraction" value="0.111111111111111"/>
+				<UserParam type="float" name="matched_suffix_ions_fraction" value="0.0"/>
+				<UserParam type="string" name="target_decoy" value="target"/>
+				<UserParam type="string" name="protein_references" value="unique"/>
+			</PeptideHit>
+		</PeptideIdentification>
+		<PeptideIdentification score_type="" higher_score_better="true" significance_threshold="0.0" MZ="364.545166015625" RT="2681.613699999999881" >
+			<PeptideHit score="1.596458451472059e-03" sequence="NFEITIKAR" charge="3" aa_before="K" aa_after="Y" start="244" end="252" protein_refs="PH_0" >
+				<UserParam type="int" name="isotope_error" value="0"/>
+				<UserParam type="float" name="fragment_mz_error_median_ppm" value="206.749971739501177"/>
+				<UserParam type="float" name="precursor_mz_error_ppm" value="0.155472996810809"/>
+				<UserParam type="float" name="matched_prefix_ions_fraction" value="0.111111111111111"/>
+				<UserParam type="float" name="matched_suffix_ions_fraction" value="0.0"/>
+				<UserParam type="string" name="target_decoy" value="target"/>
+				<UserParam type="string" name="protein_references" value="unique"/>
+			</PeptideHit>
+		</PeptideIdentification>
+	</IdentificationRun>
+</IdXML>
